@@ -2,7 +2,7 @@
     <div>
          <b-row class="justify-content-md-center margin-center-top">
                     <b-card
-                    title="NEW STUDENT"
+                    title="NEW ACCOUNT"
                     img-src="https://picsum.photos/600/300/?image=25"
                     img-alt="Image"
                     img-top

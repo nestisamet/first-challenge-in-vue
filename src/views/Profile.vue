@@ -54,7 +54,7 @@ export default {
           let self=this;
           let postData={name:this.name,surname:this.surname};
           axios({             
-                  url: 'https://mulakat.stemizer.com/rest/profile',
+                  url: 'https://mulakat.stemizer.com/rest/account/profile',
                   method:'post',
                   headers: {'Authorization':  "Bearer "+this.$stAuth.token},
                   data:{name:this.name,surname:this.surname}
@@ -81,7 +81,7 @@ export default {
        axios.defaults.headers.post['Content-Type'] ="application/x-www-form-urlencoded";
        instance(         
             { 
-                    url: '/rest/profile',
+                    url: '/rest/account/profile',
                     method:'get',
                 }
           )

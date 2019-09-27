@@ -55,15 +55,13 @@ export default {
                     headers: {'Authorization':  "Bearer "+this.$stAuth.token},
                     data:postData
           }) 
-          .then(function (response) {
+          .then(function () { // response
                // handle success
-              console.log(response);
               self.isSaved=true;
               setTimeout(self.routeNav("/"),2000);
           })
-          .catch(function (error) {
+          .catch(function () { // error
               // handle error
-              console.log(error);7
               self.isSaved=false;
           })
         }
